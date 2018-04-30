@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SmartMaze@13.9</title>
+
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<div id="origin"></div>
+<div id="destination"></div>
+
+<div id='pen'></div>
+
+<canvas id="canvas" width="753" height="753"></canvas>
+
+
+<div id="controller">
+
+    焦点：
+    <button onClick="alert('方向键移动，玩家可以随时切换走起点或终点来完成迷宫，笔尖只在制图画墙的时候才能移动。温馨提示：由算法决定，高级模式下从终点开始走可以大大降低游戏难度，当然得到的分数也会相应减少。')">
+        ?
+    </button>
+    <br>
+    <input type="radio" id="move_origin" name="keyboard" disabled>起点
+    <input type="radio" id="move_destination" name="keyboard" disabled>终点
+    <input type="radio" id="move_pen" name="keyboard" checked>笔尖<br>
+    设置颜色：
+    <button onClick="alert('颜色系统是全局控制台，可以任意时刻改变这5个元素的颜色。有三种颜色的书写方法，第一种：常用颜色的英文名称，总共150+种；第二种：颜色的十六进制格式，如#987abc；第三种：RGB格式；详情请参见《Web颜色对照表》。')">
+        ?
+    </button>
+    <br>
+    背景：<input type="text" id="canvas_color" value="#eee" onchange="change(this)"><br>
+    起点：<input type="text" id="origin_color" value="red"><br>
+    终点：<input type="text" id="destination_color" value="lime"><br>
+    墙体：<input type="text" id="wall_color" value="black"><br>
+    路径：<input type="text" id="path_color" value="yellow"><br>
+    是否记录路径：<input type="checkbox" id="record">
+    <button onClick="alert('对应上面的路径颜色，用颜色记录沿途走过的路程可以一定程度帮助你顺利通关。您的新技能：单击地图上的路径可以瞬间移动到那个位置！')">?</button>
+    <br>
+    <button id="paint" onClick="paint()" style="font-size: 1em;">重新制图</button>
+    <br>
+    坐标(x,y)：
+    <button onClick="alert('作者为玩家提供的虚拟坐标，地图上每一个方块都是单位1，从左上角向右下角递增。其中起点和终点必须是正整数，而笔尖的位置必须是.5的小数,图上的一个小点(和墙同色)就是笔尖的位置')">
+        ?
+    </button>
+    <br>
+    起点：<input type="number" id="ori_x" value="1" min="1" max="50" step="1" onChange="ori_x_cha()">
+    <input type="number" id="ori_y" value="1" min="1" max="50" step="1" onChange="ori_y_cha()"><br>
+    终点：<input type="number" id="des_x" value="50" min="1" max="50" step="1" onChange="des_x_cha()">
+    <input type="number" id="des_y" value="50" min="1" max="50" step="1" onChange="des_y_cha()"><br>
+    笔尖：<input type="number" id="pen_x" value="0.5" min="0.5" max="50.5" step="1" onChange='pen_x_change()'>
+    <input type="number" id="pen_y" value="0.5" min="0.5" max="50.5" step="1" onChange='pen_y_change()'><br>
+    地图设置：
+    <button onClick="alert('这里设置地图的尺寸和大小，注意两者的区别。其中尺寸的单位是像素而数量是整数，对应着虚拟坐标')">?</button>
+    <br>
+    墙体厚度：<input type="number" min="1" max="10" step="1" value="3" id="wall_size"><br>
+    方块边长：<input type="number" min="1" max="50" step="1" value="12" id="square_size"><br>
+    水平数量：<input type="number" min="1" max="99" step="1" value="50" id="amount_x"><br>
+    垂直数量：<input type="number" min="1" max="99" step="1" value="50" id="amount_y"><br>
+    迷宫生成算法：
+    <button onClick="alert('提示：弱智模式下连续点击会更简单')">?</button>
+    <br>
+    <button id="generate" onClick="generate()" style="font-size: 1em;">弱智模式</button>
+    <button id="advanced_generate" onClick="advanced_generate()" style="font-size: 1em;">专业竞速</button>
+
+</div>
+
+
+<script type="text/javascript" src="main.js"></script>
+
+
+</body>
+</html>
