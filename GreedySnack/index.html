@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贪吃sei</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
+</head>
+<body>
+<canvas id="canvas" width="600" height="600"></canvas>
+<div id="controller">
+    <p>方向键←↑↓→控制/继续</p>
+    <p>空格' '暂停</p>
+    <p>shift可漂移(临时加速)</p>
+    &nbsp;&nbsp;蛇长:&nbsp;<span id="length">1</span>&nbsp;&nbsp;格
+    <br>
+    &nbsp;&nbsp;<label for="speed">速度:</label><input id="speed" type="number" value="10" min="1" max="20" step="1" onchange="accelerate(this)">格/秒
+    <br>
+    &nbsp;&nbsp;<label for="scale">边长:</label><input id="scale" type="number" value="25" min="20" max="50" step="1" onchange="extend(this)">格
+    <br>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+#canvas{
+    background: black;
+}
+
+#controller{
+    background: #eee;
+    border-radius: 10px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
