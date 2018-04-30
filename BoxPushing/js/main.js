@@ -119,7 +119,7 @@ function initLevel() {
     DrawMap(curMap);//绘制出当前等级的地图
 }
 
-//上/下一关
+//切换关卡
 function nextLevel(i) {
     //iCurlevel当前的地图关数
     iCurlevel = iCurlevel + i;
@@ -134,6 +134,7 @@ function nextLevel(i) {
     moveTimes = 0;//游戏关卡移动步数清零
     mapLine = []; //清空
     updateInfo();//初始化当前关卡数据
+    // can.focus();
 }
 
 //小人移动
