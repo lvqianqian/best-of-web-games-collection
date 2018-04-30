@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扫雷</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mine.css">
+</head>
+<body>
+
+<div class="buttons-left">
+    <button class="start active" value="6">6💣</button>
+    <button class="start" value="20">20💣</button>
+    <button class="start" value="42">42💣</button>
+</div>
+
+<div class="buttons-right">
+    <button class="active" value="12">12*12</button>
+    <button class="" value="20">20*20</button>
+    <button class="" value="30">30*30</button>
+</div>
+<div class="container">
+    <header>
+        <div class="header-contain-nums" id="id-div-time">用时：<span id='id-span-time'>0</span></div>
+        <span id="emoji" onclick="main()">☺</span>
+        <div class="header-contain-nums" id="id-div-mines">剩余：<span id="id-span-mines"></span></div>
+    </header>
+    <div id="id-content">
+
+    </div>
+</div>
+
+<script src=markedSquare.js></script>
+<script src=game.js></script>
+</body>
+</html>

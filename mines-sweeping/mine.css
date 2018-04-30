@@ -1,0 +1,117 @@
+body {
+    background: #ccc;
+    user-select: none;
+    cursor: default;
+    text-align: center;
+}
+
+#emoji{
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.active{
+    background: orange;
+}
+
+.buttons-left {
+    float: left;
+
+}
+
+.buttons-right {
+    float: right;
+}
+
+button {
+    display: block;
+    width: 120px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    background: #34D;
+    color: white;
+    font-size: 19px;
+    box-shadow: 2px 2px 1px #888;
+    margin: 10px auto;
+}
+
+button:hover {
+    background: orange;
+    box-shadow: 2px 2px 3px #777;
+}
+
+.container {
+    display: inline-block;
+    background: #ddd;
+    border: 3px solid #eee;
+    border-radius: 2%;
+    box-shadow: 4px 4px 8px #888;
+}
+
+header {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 24px 24px 0 24px;
+}
+
+.header-contain-nums {
+    border: 1px solid #777;
+    width: 130px;
+
+}
+
+#id-div-time {
+    float: left;
+}
+
+#id-div-mines {
+    float: right;
+}
+
+#id-content {
+    margin: 30px 30px;
+}
+
+.square-line {
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.square {
+    width: 23px;
+    height: 23px;
+    border: 1px solid #666;
+    float: left;
+    text-align: center;
+    background: #abe;
+}
+
+.square:hover {
+    background: #cdf;
+}
+
+.mine {
+    background: #f88;
+}
+
+.mine:hover {
+    background: #f55;
+}
+
+.value {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.clicked {
+    background: #eee;
+}
+
+.clicked:hover {
+    background: #eee;
+}
