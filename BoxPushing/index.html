@@ -25,7 +25,9 @@
             <input type="button" value="撤销(0)" id="revoker" onclick="undo()">
             <input type="button" value="重玩" onClick="nextLevel(0)">
             <label for="chooser">选关:</label>
-            <select id="chooser" onchange="nextLevel(parseInt(this.value) - iCurlevel);this.blur()"></select>
+            <select id="chooser" onchange="nextLevel(parseInt(this.value) - iCurlevel);this.blur()">
+                <!--选完后blur掉防止方向键双焦点-->
+            </select>
         </div>
     </div>
 
