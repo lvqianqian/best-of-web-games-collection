@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>推箱子</title>
+    <link href="css/default.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body onkeydown="doKeyDown(event)">
+<!--页头-->
+<div class="head">BOX-PUSHING</div>
+
+<div id='mybox'>
+
+
+    <div class="game">
+        <canvas id="canvas" width="560" height="560"></canvas>
+        <div id="msg"></div>
+        <br>
+        <div class="buttonbox">
+            <input type="button" value="上一关" onClick="nextLevel(-1)">
+            <input type="button" value="下一关" onClick="nextLevel(1)">
+            <input type="button" value="撤销(0)" id="revoker" onclick="undo()">
+            <input type="button" value="重玩" onClick="nextLevel(0)">
+            <label for="chooser">选关:</label>
+            <select id="chooser" onchange="nextLevel(parseInt(this.value) - iCurlevel);"></select>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/mapdata.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

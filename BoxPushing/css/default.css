@@ -1,0 +1,59 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 0.9em;
+    font-family: verdana, arial, sans-serif;
+    background-color: #000;
+    margin: auto;
+    overflow: hidden;
+}
+
+#mybox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 800px;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.game {
+    width: 560px;
+    margin: 50px auto;
+    border: 4px inset #ccc;
+    background-color: #fff;
+}
+
+#msg {
+    margin-top: 10px;
+}
+
+.buttonbox {
+    margin-bottom: 20px;
+}
+
+.head {
+    margin-bottom: 10px;
+    height: 70px;
+    top: 0;
+    background-color: #333;
+    border-bottom: 1px solid #777;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: center;
+    color: #eee;
+    line-height: 70px;
+    font-weight: 300;
+    font-size: 2em;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+input[type=button]{
+    width: 80px;
+}
