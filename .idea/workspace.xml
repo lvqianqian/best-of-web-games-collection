@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a1e923c-51f3-4b4c-afb1-be10f4728a89" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/three-then-clear/Clear3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/three-then-clear/src/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mines-sweeping/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mines-sweeping/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mines-sweeping/markedSquare.js" beforeDir="false" afterPath="$PROJECT_DIR$/mines-sweeping/markedSquare.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mines-sweeping/mine.css" beforeDir="false" afterPath="$PROJECT_DIR$/mines-sweeping/mine.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tetris/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tetris/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/three-then-clear/MatchThree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/three-then-clear/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/three-then-clear/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoxPushing/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/BoxPushing/css/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoxPushing/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/BoxPushing/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoxPushing/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/BoxPushing/js/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,38 +18,31 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mines-sweeping/index.html">
+        <entry file="file://$PROJECT_DIR$/BoxPushing/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="240">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mine.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mines-sweeping/mine.css">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BoxPushing/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="303">
+              <caret line="174" column="21" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="markedSquare.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mines-sweeping/markedSquare.js">
+      <file leaf-file-name="default.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BoxPushing/css/default.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="655">
-              <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
+              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mines-sweeping/game.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-179" />
           </provider>
         </entry>
       </file>
@@ -87,8 +75,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/BoxPushing/js/main.js" />
-        <option value="$PROJECT_DIR$/BoxPushing/index.html" />
         <option value="$PROJECT_DIR$/three-then-clear/js/main.js" />
         <option value="$PROJECT_DIR$/three-then-clear/MatchThree.html" />
         <option value="$PROJECT_DIR$/three-then-clear/Clear3.html" />
@@ -97,6 +83,9 @@
         <option value="$PROJECT_DIR$/mines-sweeping/index.html" />
         <option value="$PROJECT_DIR$/mines-sweeping/mine.css" />
         <option value="$PROJECT_DIR$/mines-sweeping/markedSquare.js" />
+        <option value="$PROJECT_DIR$/BoxPushing/css/default.css" />
+        <option value="$PROJECT_DIR$/BoxPushing/index.html" />
+        <option value="$PROJECT_DIR$/BoxPushing/js/main.js" />
       </list>
     </option>
   </component>
@@ -115,7 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,22 +114,19 @@
             <path>
               <item name="best-of-web-games-collection" type="b2602c69:ProjectViewProjectNode" />
               <item name="best-of-web-games-collection" type="462c0819:PsiDirectoryNode" />
-              <item name="2048" type="462c0819:PsiDirectoryNode" />
+              <item name="BoxPushing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="best-of-web-games-collection" type="b2602c69:ProjectViewProjectNode" />
               <item name="best-of-web-games-collection" type="462c0819:PsiDirectoryNode" />
-              <item name="GreedySnack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="best-of-web-games-collection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="best-of-web-games-collection" type="462c0819:PsiDirectoryNode" />
-              <item name="mines-sweeping" type="462c0819:PsiDirectoryNode" />
+              <item name="BoxPushing" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (2)">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="Clear3.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/best-of-web-games-collection/three-then-clear/Clear3.html" />
     <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/best-of-web-games-collection/tetris/index.html" />
     <configuration name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/best-of-web-games-collection/mines-sweeping/index.html" />
@@ -178,10 +163,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html (2)" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.Clear3.html" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -197,25 +182,28 @@
       <updated>1525084835899</updated>
       <workItem from="1525084839517" duration="5045000" />
       <workItem from="1525131985427" duration="4863000" />
+      <workItem from="1525162892622" duration="27000" />
+      <workItem from="1525179617944" duration="917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9908000" />
+    <option name="totallyTimeSpent" value="10852000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -232,6 +220,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mines-sweeping/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mines-sweeping/markedSquare.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mines-sweeping/mine.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/three-then-clear/Clear3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
@@ -244,13 +253,6 @@
         <state relative-caret-position="-5866" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BoxPushing/css/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -258,33 +260,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/MatchThree-master/MatchThree.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BoxPushing/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BoxPushing/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="131" column="28" lean-forward="true" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/three-then-clear/images/back.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/three-then-clear/images/forg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/MatchThree-master/MatchThree.html" />
     <entry file="file://$PROJECT_DIR$/three-then-clear/src/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
@@ -325,9 +301,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mines-sweeping/game.js">
+    <entry file="file://$PROJECT_DIR$/mines-sweeping/mine.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179" />
+        <state relative-caret-position="150">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mines-sweeping/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mines-sweeping/markedSquare.js">
@@ -337,17 +322,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mines-sweeping/index.html">
+    <entry file="file://$PROJECT_DIR$/BoxPushing/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="240">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mines-sweeping/mine.css">
+    <entry file="file://$PROJECT_DIR$/BoxPushing/css/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="655">
+          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BoxPushing/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="174" column="21" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
         </state>
       </provider>
     </entry>

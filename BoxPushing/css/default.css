@@ -57,3 +57,7 @@ body {
 input[type=button]{
     width: 80px;
 }
+
+#sounds{
+    display: none;
+}

@@ -7,6 +7,9 @@ for (let i = 0; i < levels.length; i++) {
     chooser.appendChild(option);
 }
 
+let win = document.querySelector('#win');
+let stuck = document.querySelector('#stuck');
+
 let lock = false;   //键盘锁
 let history = 10;  //历史保留的地图数量
 let can = document.getElementById("canvas");
@@ -168,7 +171,10 @@ function doKeyDown(event) {
     //若果小人能够移动的话，更新游戏数据，并重绘地图
     if (Trygo(p1, p2))
         moveTimes++;
-    else mapLine.pop();
+    else {
+        stuck.play();
+        mapLine.pop();
+    }
 
     if (mapLine.length > history) mapLine.shift();
     updateInfo();
@@ -179,6 +185,7 @@ function doKeyDown(event) {
     if (checkFinish()) {
         lock = true;  //防止重复按键(同步锁)
         setTimeout(function () {
+            win.play();
             alert("成功!");
             nextLevel(1);
             lock = false;
