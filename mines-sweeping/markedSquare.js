@@ -1,5 +1,5 @@
 
-let x = y = 12;
+let x = y = 12;     //格子数量
 let num = 6;
 let container = document.querySelector('#id-content');
 let emoji = document.getElementById('emoji');
@@ -154,6 +154,6 @@ let scaleChange = function () {
         item.classList.remove('active');
     });
     event.target.classList.add('active');
-    x = y = event.target.value;
+    x = y = parseInt(event.target.value);
     main();
 };
