@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a1e923c-51f3-4b4c-afb1-be10f4728a89" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/BoxPushing/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/BoxPushing/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoxPushing/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/BoxPushing/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy-ball/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,28 +18,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BoxPushing/index.html">
+        <entry file="file://$PROJECT_DIR$/flappy-ball/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state relative-caret-position="175">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BoxPushing/js/main.js">
+        <entry file="file://$PROJECT_DIR$/flappy-ball/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2207">
-              <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BoxPushing/css/default.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+            <state relative-caret-position="1710">
+              <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -49,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -88,6 +79,8 @@
         <option value="$PROJECT_DIR$/BoxPushing/css/default.css" />
         <option value="$PROJECT_DIR$/BoxPushing/js/main.js" />
         <option value="$PROJECT_DIR$/BoxPushing/index.html" />
+        <option value="$PROJECT_DIR$/flappy-ball/main.js" />
+        <option value="$PROJECT_DIR$/flappy-ball/index.html" />
       </list>
     </option>
   </component>
@@ -116,13 +109,7 @@
             <path>
               <item name="best-of-web-games-collection" type="b2602c69:ProjectViewProjectNode" />
               <item name="best-of-web-games-collection" type="462c0819:PsiDirectoryNode" />
-              <item name="BoxPushing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="best-of-web-games-collection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="best-of-web-games-collection" type="462c0819:PsiDirectoryNode" />
-              <item name="BoxPushing" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="flappy-ball" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,19 +139,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (3)">
     <configuration name="Clear3.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/best-of-web-games-collection/three-then-clear/Clear3.html" />
     <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/best-of-web-games-collection/tetris/index.html" />
     <configuration name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/best-of-web-games-collection/mines-sweeping/index.html" />
+    <configuration name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/best-of-web-games-collection/flappy-ball/index.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/best-of-web-games-collection/BoxPushing/index.html" />
     <list>
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.Clear3.html" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.index.html (2)" />
+      <item itemvalue="JavaScript Debug.index.html (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (3)" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html (2)" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
@@ -185,12 +175,12 @@
       <workItem from="1525084839517" duration="5045000" />
       <workItem from="1525131985427" duration="4863000" />
       <workItem from="1525162892622" duration="27000" />
-      <workItem from="1525179617944" duration="2180000" />
+      <workItem from="1525179617944" duration="2626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12115000" />
+    <option name="totallyTimeSpent" value="12561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -324,10 +314,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BoxPushing/css/default.css">
+    <entry file="file://$PROJECT_DIR$/BoxPushing/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+        <state relative-caret-position="225">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -338,10 +328,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BoxPushing/index.html">
+    <entry file="file://$PROJECT_DIR$/BoxPushing/css/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        <state relative-caret-position="655">
+          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flappy-ball/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flappy-ball/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
         </state>
       </provider>
     </entry>
