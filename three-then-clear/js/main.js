@@ -230,7 +230,7 @@ GameMgr.prototype = {
                             chosen = true;
                             this.style.border = "2px solid #5CACEE";
                         } else {
-                            if ((i - lastI === 1 && j === lastJ)
+                            if ((i - lastI === 1 && j === lastJ)    //成功匹配三个
                                 || (i - lastI === -1 && j === lastJ)
                                 || (j - lastJ === 1 && i === lastI)
                                 || (j - lastJ === -1 && i === lastI)) {

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a1e923c-51f3-4b4c-afb1-be10f4728a89" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/three-then-clear/MatchThree.html" beforeDir="false" afterPath="$PROJECT_DIR$/three-then-clear/MatchThree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/three-then-clear/images/back.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/three-then-clear/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/three-then-clear/js/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,20 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MatchThree.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MatchThree.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/three-then-clear/MatchThree.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="223">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/three-then-clear/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="132" column="13" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
+            <state>
+              <caret column="9" selection-start-column="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -65,8 +63,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/BoxPushing/js/main.js" />
         <option value="$PROJECT_DIR$/BoxPushing/index.html" />
-        <option value="$PROJECT_DIR$/three-then-clear/MatchThree.html" />
         <option value="$PROJECT_DIR$/three-then-clear/js/main.js" />
+        <option value="$PROJECT_DIR$/three-then-clear/MatchThree.html" />
       </list>
     </option>
   </component>
@@ -161,12 +159,12 @@
       <option name="presentableId" value="Default" />
       <updated>1525084835899</updated>
       <workItem from="1525084839517" duration="5045000" />
-      <workItem from="1525131985427" duration="827000" />
+      <workItem from="1525131985427" duration="1975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5872000" />
+    <option name="totallyTimeSpent" value="7020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -248,17 +246,17 @@
     <entry file="file://$PROJECT_DIR$/three-then-clear/images/back.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/three-then-clear/MatchThree.html">
+    <entry file="file://$PROJECT_DIR$/three-then-clear/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/three-then-clear/js/main.js">
+    <entry file="file://$PROJECT_DIR$/three-then-clear/MatchThree.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="132" column="13" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
+        <state relative-caret-position="223">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
         </state>
       </provider>
     </entry>
