@@ -130,7 +130,7 @@ Map.prototype = {
                 this.mapArr[i][j].className = animal.types[this.markArr[i][j]];
             }
         }
-        timeOutFun = function () {
+        let timeOutFun = function () {
             for (let i = 0; i < that.height; i++) {
                 for (let j = 0; j < that.width; j++) {
                     if (that.markArr[i][j] === -1) {
