@@ -11,10 +11,13 @@
 <body onkeydown="doKeyDown(event)">
 <!--页头-->
 <div class="head">BOX-PUSHING</div>
-<div id="sounds">
 
-<audio src="sounds/win.wav" id="win"></audio>
-<audio src="sounds/stuck.mp3" id="stuck"></audio>
+<div id="sounds">
+    <!--分别是'胜利','无法行走',切换关卡','撤销'的提示音-->
+    <audio src="sounds/win.wav" id="win"></audio>
+    <audio src="sounds/stuck.mp3" id="stuck"></audio>
+    <audio src="sounds/refresh.mp3" id="refresh"></audio>
+    <audio src="sounds/regret.mp3" id="regret"></audio>
 </div>
 
 
@@ -38,7 +41,6 @@
     </div>
 
 </div>
-
 
 
 <script src="js/mapdata.js"></script>

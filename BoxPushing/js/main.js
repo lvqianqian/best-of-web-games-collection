@@ -6,9 +6,7 @@ for (let i = 0; i < levels.length; i++) {
     option.value = i + '';
     chooser.appendChild(option);
 }
-
-let win = document.querySelector('#win');
-let stuck = document.querySelector('#stuck');
+let [win, stuck, refresh, regret] = document.querySelectorAll('#sounds audio');
 
 let lock = false;   //键盘锁
 let history = 10;  //历史保留的地图数量
@@ -61,8 +59,10 @@ function undo() {
         moveTimes--;
         curMap = mapLine.pop().concat();
         updateInfo();
+        DrawMap(curMap);
+        regret.play();
     }
-    DrawMap(curMap);
+
 }
 
 //初始化游戏
@@ -138,6 +138,7 @@ function nextLevel(i) {
     mapLine = []; //清空
     updateInfo();//初始化当前关卡数据
     // can.focus();
+    refresh.play();
 }
 
 //小人移动
@@ -171,7 +172,7 @@ function doKeyDown(event) {
     //若果小人能够移动的话，更新游戏数据，并重绘地图
     if (Trygo(p1, p2))
         moveTimes++;
-    else {
+    else {  //即使不嗯呢移动,也别return了吧,因为小人可能要转向啊:-)
         stuck.play();
         mapLine.pop();
     }
@@ -184,8 +185,8 @@ function doKeyDown(event) {
     //设置延时执行是为了同步上一步的canvas画图
     if (checkFinish()) {
         lock = true;  //防止重复按键(同步锁)
+        win.play();
         setTimeout(function () {
-            win.play();
             alert("成功!");
             nextLevel(1);
             lock = false;
