@@ -6,45 +6,48 @@
     <title>Flappy Ball</title>
 </head>
 <style>
-* {
-    padding: 0;
-    margin: 0;
-}
+    * {
+        padding: 0;
+        margin: 0;
+    }
 
-html,
-body {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
+    html, body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
 
-#btn {
-    position: absolute;
-    top: 45%;
-    left: 45%;
-    width: 150px;
-    height: 100px;
-    font-size: 30px;
-    color: #123456;
-}
+    #btn {
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        width: 150px;
+        height: 100px;
+        font-size: 30px;
+        color: #fff;
+    }
 
-p {
-    position: absolute;
-    top: 5%;
-    left: 48%;
-    font-size: 20px;
-    color: #123456;
-    font-size: 30px;
-    color: #F00;
-}
+    p {
+        position: absolute;
+        top: 5%;
+        left: 48%;
+        font-size: 30px;
+        color: #F00;
+    }
+
+    canvas {
+        display: block;
+        margin: 10px auto;
+        border: #000 1px solid
+    }
 </style>
 
 <body>
-    <canvas id="canvas" style="display:block;margin:10px auto;border:#000 1px solid">
-        当前浏览器不支持Canvas，请更换浏览器后再试
-    </canvas>
-    <p></p>
-    <button type="button" id="btn" onclick="gameStrat();">Start!</button>
+<canvas id="canvas">
+    当前浏览器不支持Canvas，请更换浏览器后再试
+</canvas>
+<p id="score"></p>
+<div id="btn" >Start!</div>
 </body>
 
 <script src="main.js"></script>
