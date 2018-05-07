@@ -1,20 +1,20 @@
-const B_Array = [''];
+let B_Array = [''];
 //画布宽高
-const cw = 1000;
-const ch = 700;
-const B_width = 70;
-const B_top = 100;
-const B_x = [];
-const B_kind = [];
-const nowTime = new Date();
-const btn = document.getElementById('btn');
-const score = document.querySelector('#score');     //分数
+let cw = 1000;
+let ch = 700;
+let B_width = 70;
+let B_top = 100;
+let B_x = [];
+let B_kind = [];
+let nowTime = new Date();
+// let btn = document.getElementById('btn');
+let score = document.querySelector('#score');     //分数
+let canvas = document.getElementById('canvas');
+let context = canvas.getContext("2d");
 
-const canvas = document.getElementById('canvas');
-const context = canvas.getContext("2d");
 
-let y = 400;
-let g = 0;
+let y = 400;    //Y轴方向速度
+let g = 0;  //加速度?
 let bbb = cw - B_width;
 let nowsecond = nowTime.getTime();
 let isPaused = true;
@@ -23,15 +23,15 @@ canvas.width = cw;
 canvas.height = ch;
 // canvas.focus();
 
-context.fillStyle = 'rgba(0,0,0,0.6)';
+context.fillStyle = 'rgba(0,0,0,0.4)';
 context.fillRect(0, 0, cw, ch);
+context.font="80px Georgia";
+context.fillStyle = 'white';
+context.textAlign="center";     //相对于下面的x坐标居中
+context.fillText('>> START <<', 500, 380);
 
-const gameStrat = function () {
-    if (btn.innerHTML === "重玩") {
-        // window.location.href = window.location.href;
-        location.reload();
-    }
-    btn.style.display = "none";
+
+let gameStrat = function () {
     canvas.onmousedown = document.onkeydown = flap;
     ball = setInterval(function () {
         render(context);
@@ -59,9 +59,9 @@ function render(cxt) {
 }
 
 function barrierAdd() {
-    const nextTime = new Date();
-    const nextsecond = nextTime.getTime();
-    const diff = nextsecond - nowsecond;
+    let nextTime = new Date();
+    let nextsecond = nextTime.getTime();
+    let diff = nextsecond - nowsecond;
     if (diff >= 1500) { //障碍物出现间隔
         B_x.push(bbb);
         nowsecond = nextsecond;
@@ -117,11 +117,6 @@ function collisionTest() {
         }
     }
     if (collided) {
-        context.fillStyle = 'rgba(0,0,0,0.6)';
-        context.fillRect(0, 0, cw, ch);
-        btn.style.display = "block";
-        btn.innerHTML = "重玩";
-        clearInterval(ball);
-        canvas.onmousedown = document.onkeydown = gameStrat;
+        location.reload();
     }
 }
