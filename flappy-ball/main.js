@@ -1,4 +1,4 @@
-let B_Array = [''];
+let B_Array = [0];  //障碍物
 //画布宽高
 let cw = 1000;
 let ch = 700;
@@ -7,12 +7,11 @@ let B_top = 100;
 let B_x = [];
 let B_kind = [];
 let nowTime = new Date();
-// let btn = document.getElementById('btn');
-let score = document.querySelector('#score');     //分数
+// let score = document.querySelector('#score');     //分数
 let canvas = document.getElementById('canvas');
-let context = canvas.getContext("2d");
+let ctx = canvas.getContext("2d");
 
-
+let id = 0;
 let y = 400;    //Y轴方向速度
 let g = 0;  //加速度?
 let bbb = cw - B_width;
@@ -23,41 +22,44 @@ canvas.width = cw;
 canvas.height = ch;
 // canvas.focus();
 
-context.fillStyle = 'rgba(0,0,0,0.4)';
-context.fillRect(0, 0, cw, ch);
-context.font="80px Georgia";
-context.fillStyle = 'white';
-context.textAlign="center";     //相对于下面的x坐标居中
-context.fillText('>> START <<', 500, 380);
+ctx.fillStyle = 'rgba(0,0,0,0.4)';
+ctx.fillRect(0, 0, cw, ch);
+ctx.font = "80px Georgia";
+ctx.fillStyle = 'white';
+ctx.textAlign = "center";     //相对于下面的x坐标居中
+ctx.fillText('>> START <<', 500, 380);
 
 
 let gameStrat = function () {
     canvas.onmousedown = document.onkeydown = flap;
-    ball = setInterval(function () {
-        render(context);
-    }, 7)
+    render(ctx);
 };
 
 function flap() {
-    if (g = 3) g = -g * 5
+    if (g = 3) g = -g * 4
 }
+
 canvas.onmousedown = document.onkeydown = gameStrat;
 
-function render(cxt) {
+function render() {
 
-    cxt.clearRect(0, 0, cw, ch);
+    ctx.clearRect(0, 0, cw, ch);
     if (g < 3) {
         g++;
     }
     y += g; //  球掉落速度
 
-    renderBall(cxt);
-    renderBarrier(cxt);
+    renderBall(ctx);
+    renderBarrier(ctx);
     barrierAdd();
     collisionTest();
 
+
+    // score.innerHTML = B_Array.length;
+    requestAnimationFrame(render)
 }
 
+//生成新的障碍物
 function barrierAdd() {
     let nextTime = new Date();
     let nextsecond = nextTime.getTime();
@@ -66,31 +68,36 @@ function barrierAdd() {
         B_x.push(bbb);
         nowsecond = nextsecond;
         B_x.push(bbb);
-        B_Array.push('');
+        B_Array.push(++id);
+        // if (B_Array.length > 5)
+        //     B_Array.shift();
     }
 }
 
 //  渲染个球
-function renderBall(cxt) {
+function renderBall(ctx) {
 
-    cxt.fillStyle = "rgb(0,0,0)";
-    cxt.fill();
-    cxt.beginPath();
-    cxt.arc(120, y, 30, 0, 2 * Math.PI, true);
-    cxt.closePath();
+    ctx.fillStyle = "rgb(0,0,0)";
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(120, y, 30, 0, 2 * Math.PI, true);
+    ctx.closePath();
 
 }
 
 // 渲染障碍物
-function renderBarrier(cxt) {
-    B_kind.push(Math.ceil(Math.random() * 4))
+function renderBarrier(ctx) {
+    B_kind.push(Math.ceil(Math.random() * 4));
 
-    cxt.fillStyle = "rgb(50,150,250)";
+    ctx.font = "30px Georgia";
 
     for (let i = 0; i < B_Array.length; i++) {
         B_x[i] -= 3; //  障碍物移动速度
-        cxt.fillRect(B_x[i], 0, 80, B_top * B_kind[i]);
-        cxt.fillRect(B_x[i], B_top * B_kind[i] + 200, 80, ch - B_top * B_kind[i] - 200);
+    ctx.fillStyle = "rgb(50,150,250)";
+        ctx.fillRect(B_x[i], 0, 80, B_top * B_kind[i]);
+        ctx.fillRect(B_x[i], B_top * B_kind[i] + 200, 80, ch - B_top * B_kind[i] - 200);
+        ctx.fillStyle = 'white';
+        ctx.fillText(B_Array[i], B_x[i]+40, 30);
     }
 }
 
@@ -102,7 +109,7 @@ function collisionTest() {
             if (y < B_top * B_kind[i] + 28 || y > B_top * B_kind[i] + 200 - 28) {
                 collided = true;
             } else {
-                score.innerHTML = i;
+                // score.innerHTML = i;
             }
         }
         if (B_x[i] > 10 && B_x[i] < 40) {
