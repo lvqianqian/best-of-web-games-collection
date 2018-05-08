@@ -1,4 +1,4 @@
-let B_Array = [0];  //障碍物
+let B_Array = [0];  //障碍物(待优化:没有shift()
 //画布宽高
 let cw = 1000;
 let ch = 700;
@@ -93,11 +93,11 @@ function renderBarrier(ctx) {
 
     for (let i = 0; i < B_Array.length; i++) {
         B_x[i] -= 3; //  障碍物移动速度
-    ctx.fillStyle = "rgb(50,150,250)";
+        ctx.fillStyle = "rgb(50,150,250)";
         ctx.fillRect(B_x[i], 0, 80, B_top * B_kind[i]);
         ctx.fillRect(B_x[i], B_top * B_kind[i] + 200, 80, ch - B_top * B_kind[i] - 200);
         ctx.fillStyle = 'white';
-        ctx.fillText(B_Array[i], B_x[i]+40, 30);
+        ctx.fillText(B_Array[i], B_x[i] + 40, 30);
     }
 }
 
